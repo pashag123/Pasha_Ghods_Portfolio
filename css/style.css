@@ -1,7 +1,7 @@
-*{
+* {
     box-sizing: border-box;
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -18,7 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    
+
 }
 
 
@@ -30,26 +30,26 @@ header h1 {
     font-size: 400%;
 }
 
- header nav  {
+header nav {
     text-decoration: underline;
     color: rgb(73, 7, 7);
     font-family: 'Caveat', cursive;
     font-size: 150%;
-   display: flex;
-   justify-content: space-between;
-   flex-basis: 25%;
-   flex-wrap: wrap;
-    }
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+}
 
-    p {
+p {
     font-size: 35px;
-    font-family:'Caveat', cursive ;
+    font-family: 'Caveat', cursive;
     color: rgb(40, 4, 4);
 }
 
-.background-img img  {
-   width: 100%;
-   height: 150px;
+.background-img img {
+    width: 100%;
+    height: 150px;
 }
 
 main section {
@@ -64,7 +64,7 @@ main section {
 }
 
 #box1 {
-    background-image: url(../images/star-wars-death-star-at-at-space-wallpaper-preview.jpg);
+    background-image: url(../images/Screenshot_2023-10-09_222855.png);
 }
 
 #box2 {
@@ -76,7 +76,7 @@ main section {
 }
 
 #box4 {
-background-image: url(../images/304452.jpg);
+    background-image: url(../images/304452.jpg);
 }
 
 main section h2 {
@@ -101,7 +101,7 @@ main section article {
     border: solid 3px black;
 }
 
-.work-item:first-child{
+.work-item:first-child {
     flex-basis: 100%;
     height: 350px;
 }
@@ -113,34 +113,31 @@ main section article {
 }
 
 section article nav {
-    font-family: 'Caveat', cursive ;
+    font-family: 'Caveat', cursive;
     font-size: 25px;
-   display: flex;
-   justify-content: space-evenly;
-   color: red;
+    display: flex;
+    justify-content: space-evenly;
+    color: red;
 }
 
 .work-item div h3 {
-  font-size: 30px;
-  height: flex;
-  width: 30%;
-  flex-basis: calc(50% - 1em);
-  margin: 0.5em;
-  /* border: solid 3px black; */
-  background-color: rgb(169, 166, 166); 
+    font-size: 30px;
+    height: flex;
+    width: 30%;
+    flex-basis: calc(50% - 1em);
+    margin: 0.5em;
+    /* border: solid 3px black; */
+    background-color: rgb(169, 166, 166);
 }
 
 h3:hover {
     color: green;
-  }
-  
- 
-
-
-@media screen and (max-width:700px) {
-    main section h2: flex-basis: 100%;
-    
 }
 
 
 
+
+@media screen and (max-width:700px) {
+    main section h2: flex-basis: 100%;
+
+}
