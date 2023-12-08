@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,139 +6,129 @@
 }
 
 
-
-
 body {
-    max-width: 2000px;
-    background-color: rgb(120, 120, 137);
+    font-family: 'Arial', sans-serif;
+    background-color: #787889;
+    color: #333;
 }
+
 
 header {
-    background-color: gray;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
 }
-
-
 
 header h1 {
-    background-color: black;
-    color: red;
     font-family: 'Caveat', cursive;
-    font-size: 400%;
+    font-size: 60px;
+    
 }
+
 
 header nav {
-    text-decoration: underline;
-    color: rgb(73, 7, 7);
-    font-family: 'Caveat', cursive;
-    font-size: 150%;
     display: flex;
-    justify-content: space-between;
-    flex-basis: 25%;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
 }
 
-p {
-    font-size: 35px;
-    font-family: 'Caveat', cursive;
-    color: rgb(40, 4, 4);
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
 }
 
-.background-img img {
-    width: 100%;
-    height: 150px;
+header a:hover {
+    color: #ffd700; 
 }
 
-main section {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-between;
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
 }
 
-#horiseon {
-    background-image: url(../images/Horiseon-Website\ 3.png);
 
+.bio {
+    text-align: justify;
 }
 
-#box1 {
-    background-image: url(../images/Screenshot_2023-10-09_222855.png);
-}
 
-#box2 {
-    background-image: url(../images/the-elder-scrolls-v-skyrim-video-games-wallpaper-preview.jpg);
-}
 
-#box3 {
-    background-image: url(../images/movies-film-reel-technology-projector-8mm-wallpaper-preview.jpg);
-}
 
-#box4 {
-    background-image: url(../images/304452.jpg);
-}
-
-main section h2 {
-    flex-basis: 25%;
-    text-align: right;
-    padding-right: 20px;
-    border-right: solid 3px rgb(7, 38, 7);
-    font-size: 50px;
-    margin-top: 30px;
-    color: rgb(53, 11, 92);
-    font-family: 'Caveat', cursive;
-}
-
-main section article {
-    flex-basis: 70%;
+.portfolio-work {
+    text-align: center;
 }
 
 .work-item {
-    height: 200px;
-    flex-basis: calc(50% - 1em);
-    margin: 0.5em;
-    border: solid 3px black;
-}
-
-.work-item:first-child {
-    flex-basis: 100%;
-    height: 350px;
-}
-
-.work-container {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid #333;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
 }
 
-section article nav {
-    font-family: 'Caveat', cursive;
-    font-size: 25px;
-    display: flex;
-    justify-content: space-evenly;
-    color: red;
+.work-item:hover {
+    border-color: #ffd700; 
+}
+
+#horiseon {
+    background-image: url('../images/Horiseon-Website 3.png'); 
+}
+
+#box1 {
+    background-image: url('../images/Screenshot_2023-10-09_222855.png'); 
+}
+
+#box2 {
+    background-image: url('../images/the-elder-scrolls-v-skyrim-video-games-wallpaper-preview.jpg');
+}
+
+#box3 {
+    background-image: url('../images/movies-film-reel-technology-projector-8mm-wallpaper-preview.jpg'); 
+}
+
+#box4 {
+    background-image: url('../images/304452.jpg'); 
+}
+
+.work-item div {
+    text-align: center;
+    padding: 10px;
 }
 
 .work-item div h3 {
-    font-size: 30px;
-    height: flex;
-    width: 30%;
-    flex-basis: calc(50% - 1em);
-    margin: 0.5em;
-    /* border: solid 3px black; */
-    background-color: rgb(169, 166, 166);
-}
-
-h3:hover {
-    color: green;
+    font-size: 1.5em;
 }
 
 
 
 
-@media screen and (max-width:700px) {
-    main section h2: flex-basis: 100%;
 
+#contact-me {
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    margin: 10px;
+    font-size: 1.2em;
+}
+
+
+@media screen and (max-width: 700px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header a {
+        margin-bottom: 10px;
+    }
 }
